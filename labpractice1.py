@@ -1,3 +1,4 @@
+###Haymanot 
 ###this is comment section
 '''dsdds'''
 ### x,y,z="Orange","Banana","Cherry"
@@ -13,7 +14,7 @@
 ###print(type(a))
 ###print(type(b))
 ###c="haymanot"
-###print(len(c))
+###print(lengit pull(c))
 ###d=input("Enter your name: ")
 ###print(d)
 ###print(type(d))
