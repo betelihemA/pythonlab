@@ -1,4 +1,4 @@
-def sum():
+'''def sum():
     # this is the first comment
     x,y,z="orange","banana","cherry"
     a=b=c="orange"
@@ -24,4 +24,47 @@ print(sum)
 name="Betelihem"
 age=23
 txt="my name is {:s} and I am {:d} years old" 
-print(txt.format(name,age))
+print(txt.format(name,age))'''
+#second lab
+x="abebe"
+print(x[0])
+print(x[-1])
+print(x[::-1])
+'''y="hello, world"
+print(y.split(' , '))'''
+k=2
+h=3.55
+print(bin(k))
+print(int(h))
+num=int(input("enter natural number"))
+if(num % 2==0):
+    print ("the entered num is even")
+else:
+    print ("the entered num is odd")
+z=int(input("enter a number "))
+if(z<=100):
+    if(z%3==0):
+        print("hello")
+    elif(z%5==0):
+        print("world")
+    else:
+        print("the number is not divisible by 5 or 3")
+else:
+    print("you intered invalid number")
+    '''for(intn=1;n<100;n++):
+        if(n%3==0):
+           print("hello")
+        elif(n%5==0):
+           print("world")
+        else:
+           print("the number is not divisible by 5 or 3")
+     else:
+       print("you intered invalid number")'''
+x=int(input("enter any number"))
+match x: 
+    case 2:
+        print("two")
+    case 4:
+        print("four")
+    
+
