@@ -51,15 +51,13 @@ if(z<=100):
         print("the number is not divisible by 5 or 3")
 else:
     print("you intered invalid number")
-    '''for(intn=1;n<100;n++):
-        if(n%3==0):
-           print("hello")
-        elif(n%5==0):
-           print("world")
-        else:
-           print("the number is not divisible by 5 or 3")
-     else:
-       print("you intered invalid number")'''
+for n in range (100):
+    if(n%3==0):
+        print("hello")
+    elif(n%5==0):
+        print("world")
+    else:
+        print("the number is not divisible by 5 or 3")
 x=int(input("enter any number"))
 match x: 
     case 2:
