@@ -24,7 +24,7 @@
 ###g=int(e)+int(f)
 ###print(g)
 ###print(ord('g'))
-name="someone"
+'''name="someone"
 age=23
 txt="My name is {:s} and I am {:d} years old"
 print(txt.format(name,age))
@@ -59,4 +59,8 @@ match x:
    case 2:
       print("Two")
    case 4:
-      print("Four")
+      print("Four")'''
+##Day 3
+def getSum(a,b):
+    return a+b
+print(getSum(3,5))
