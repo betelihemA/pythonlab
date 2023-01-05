@@ -89,3 +89,7 @@ stud_info={
 print(stud_info)
 set1={"a","s"}
 print(type(set1))
+def my_sum(*args):
+    for i in args:
+        print (i)
+my_sum(2,3,4,5)
