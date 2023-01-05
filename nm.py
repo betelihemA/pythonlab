@@ -26,13 +26,13 @@ age=23
 txt="my name is {:s} and I am {:d} years old" 
 print(txt.format(name,age))'''
 #second lab
-x="abebe"
+'''x="abebe"
 print(x[0])
 print(x[-1])
 print(x[::-1])
-'''y="hello, world"
+y="hello, world"
 print(y.split(' , '))'''
-k=2
+'''k=2
 h=3.55
 print(bin(k))
 print(int(h))
@@ -63,6 +63,29 @@ match x:
     case 2:
         print("two")
     case 4:
-        print("four")
-    
-
+        print("four")'''
+#3rd day lab
+def sum(a,b):
+    return a+b
+print(sum(2,3))
+g=[1,2,3,4]
+g.append(50)
+del g[0]
+print(g)
+x=[1,2,3,4,5]
+y= x.copy()
+y=list(x)
+z=[5,]
+print(type(z))
+a,b,*c=x
+print(a)
+print(b)
+print(c)
+stud_info={
+"name":["abebe","almaz","bekele"],
+"age":['18','16','20'],
+"CGPA":['3.2','3.5','2.8']
+}
+print(stud_info)
+set1={"a","s"}
+print(type(set1))
