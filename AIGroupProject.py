@@ -2,7 +2,7 @@ from collections import Counter
 import string
 
 ###word frequency
-def freq_word_fun(filepath):
+def freq_word_func(filepath):
     try:
         # Open the file
         with open(filepath, 'r', encoding='utf-8') as f:
@@ -27,4 +27,4 @@ def freq_word_fun(filepath):
         print("An error occurred")
 
 ###call function for frequency of words
-freq_word_fun('readme.txt')
+freq_word_func('readme.txt')
