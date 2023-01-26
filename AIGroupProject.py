@@ -27,4 +27,4 @@ def freq_word_func(filepath):
         print("An error occurred")
 
 ###call function for frequency of words
-freq_word_func('readme.txt')
+freq_word_func('h.txt')
