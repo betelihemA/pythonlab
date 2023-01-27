@@ -25,6 +25,22 @@ def freq_word_func(filepath):
         print("File not found")
     except:
         print("An error occurred")
+###character  frequency
+def frequency_char(filepath):
+    try:
+        # Open the file
+        with open(filepath, 'r', encoding='utf-8') as f:
+            # Read the contents of the file
+            text = f.read()
+            # Make all the characters lowercase
+            text = text.lower()
+            # Remove punctuation marks, digits and whitespaces from the text
+            text = text.translate(text.maketrans("", "", string.punctuation + string.digits + string.whitespace))
+            # Count the frequency of each character
+            char_freq = Counter(text)
+            # Sort the characters by frequency
+            sorted_chars = sorted(char_freq.items(), key=lambda x: x[1], reverse=True)
 
 ###call function for frequency of words
 freq_word_func('h.txt')
+frequency_char('h.txt')
