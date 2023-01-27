@@ -40,6 +40,13 @@ def frequency_char(filepath):
             char_freq = Counter(text)
             # Sort the characters by frequency
             sorted_chars = sorted(char_freq.items(), key=lambda x: x[1], reverse=True)
+             # Print the first five most frequently occurring characters
+            for i in range(5):
+                print(sorted_chars[i])
+    except FileNotFoundError:
+        print("File not found")
+    except:
+        print("An error occurred")
 
 ###call function for frequency of words
 freq_word_func('h.txt')
