@@ -60,6 +60,22 @@ def text_stats(filepath):
             lines = text.split('\n')
             # Count the number of lines
             line_count = len(lines)
+             # Split the text into words
+            words = text.split()
+            # Count the number of words
+            word_count = len(words)
+            # Count the number of characters
+            char_count = len(text)
+            # Print the statistics
+            print(f'Total lines: {line_count}')
+            print(f'Total words: {word_count}')
+            print(f'Total characters: {char_count}')
+    except FileNotFoundError:
+        print("File not found")
+    except:
+        print("An error occurred")
+        
 ###call function for frequency of words
 freq_word_func('h.txt')
 frequency_char('h.txt')
+text_stats('h.txt')
