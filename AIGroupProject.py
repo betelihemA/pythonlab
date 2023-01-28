@@ -47,7 +47,19 @@ def frequency_char(filepath):
         print("File not found")
     except:
         print("An error occurred")
-
+###Stastical output
+def text_stats(filepath):
+    try:
+        # Open the file
+        with open(filepath, 'r', encoding='utf-8') as f:
+            # Read the contents of the file
+            text = f.read()
+            # Remove punctuation marks from the text
+            text = text.translate(text.maketrans("", "", string.punctuation))
+            # Split the text into lines
+            lines = text.split('\n')
+            # Count the number of lines
+            line_count = len(lines)
 ###call function for frequency of words
 freq_word_func('h.txt')
 frequency_char('h.txt')
